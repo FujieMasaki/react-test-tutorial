@@ -3,8 +3,7 @@ import App from "./App";
 
 it("renders Hello", () => {
   render(<App />);
-  const element = screen.getByText("Hello");
-
-  screen.debug(element);
-  expect(element).toBeInTheDocument();
+  const elements = screen.getAllByText("Hello");
+  screen.debug(elements);
+  expect(elements).toHaveLength(2);
 });
