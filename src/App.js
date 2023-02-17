@@ -1,17 +1,9 @@
 import "./App.css";
 
+import Power from "./components/";
+
 function App() {
-  return (
-    <>
-      <h1>Hello</h1>
-      <ul>
-        <li>React</li>
-        <li>Vue</li>
-        <li>Svelte</li>
-      </ul>
-      <p>Hello</p>
-    </>
-  );
+  return <Power name="電源" />;
 }
 
 export default App;
