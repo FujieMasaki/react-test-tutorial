@@ -1,9 +1,9 @@
 import { render, screen } from "@testing-library/react";
 import App from "./App";
 
-it("renders Hello", () => {
+it("renders lists", () => {
   render(<App />);
-  const elements = screen.getAllByText("Hello");
-  screen.debug(elements);
-  expect(elements).toHaveLength(2);
+  const listElements = screen.getAllByRole("listitem");
+  screen.debug(listElements);
+  expect(listElements).toHaveLength(3);
 });
