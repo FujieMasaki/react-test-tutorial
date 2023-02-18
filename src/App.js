@@ -1,6 +1,6 @@
 import "./App.css";
 
-import Power from "./components/";
+import Power from "./components/Power";
 
 function App() {
   return <Power name="電源" />;
