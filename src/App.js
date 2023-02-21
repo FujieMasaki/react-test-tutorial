@@ -1,9 +1,13 @@
 import "./App.css";
 
-import Power from "./components/Power";
+import TodoList from "./components/TodoList.tsx";
 
 function App() {
-  return <Power name="電源" />;
+  return (
+    <div style={{ margin: "2em" }}>
+      <TodoList />
+    </div>
+  );
 }
 
 export default App;
