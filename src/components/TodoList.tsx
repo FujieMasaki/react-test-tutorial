@@ -22,7 +22,12 @@ const TodoList = () => {
     },
   ];
 
+  const handleNewTask = (event) => {
+    console.log(event.target.value);
+  };
+
   const [todos, setTodos] = useState<Todo[]>(initialState);
+  const [task, setTask] = useState<string>("");
 
   return (
     <>
@@ -32,6 +37,8 @@ const TodoList = () => {
           <li key={index}>{todo.task}</li>
         ))}
       </ul>
+      Add Task :{" "}
+      <input value={task} placeholder="Add New Task" onChange={handleNewTask} />
     </>
   );
 };
